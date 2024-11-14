@@ -1,4 +1,6 @@
-document.addEventListener('DOMContentLoaded', function () {
+// 暂时注释掉背景轮播功能
+/*
+document.addEventListener('DOMContentLoaded', function() {
     try {
         const bgSlideshow = document.getElementById('bgSlideshow');
         if (!bgSlideshow) {
@@ -29,9 +31,8 @@ document.addEventListener('DOMContentLoaded', function () {
             bgImages.forEach((img, index) => {
                 const slide = document.createElement('div');
                 slide.className = `bg-slide ${index === 0 ? 'active' : ''}`;
-                // 添加错误处理
                 slide.style.backgroundImage = `url(${img})`;
-                // 添加加载错误处理
+                
                 const tempImg = new Image();
                 tempImg.onerror = () => {
                     console.error(`Failed to load image: ${img}`);
@@ -45,23 +46,20 @@ document.addEventListener('DOMContentLoaded', function () {
         // 切换到下一张图片
         function nextSlide() {
             const slides = document.querySelectorAll('.bg-slide');
-            if (slides.length === 0) return; // 防止没有幻灯片时的错误
+            if (slides.length === 0) return;
 
             slides[currentSlide].classList.remove('active');
             currentSlide = (currentSlide + 1) % slides.length;
             slides[currentSlide].classList.add('active');
         }
 
-        // 初始化幻灯片
         createSlides();
-
-        // 设置自动切换定时器
         setInterval(nextSlide, 8000);
 
-        // 添加调试信息
         console.log('Background slideshow initialized');
         console.log('Number of images:', bgImages.length);
     } catch (error) {
         console.error('背景轮播初始化失败:', error);
     }
-}); 
+});
+*/ 
