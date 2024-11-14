@@ -33,16 +33,15 @@
 }
 
 .stat-card i {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: var(--primary-color);
     margin-bottom: 1rem;
 }
 
 .stat-number {
-    font-size: 2rem;
+    font-size: 1rem;
     color: var(--primary-color);
     font-weight: bold;
-    text-shadow: var(--neon-shadow);
 }
 
 /* 贡献图表样式 */
@@ -133,7 +132,7 @@
     }
 
     .stat-card {
-        padding: 1.5rem;
+        padding: 0.5rem;
     }
 
     .stat-number {
