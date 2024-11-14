@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub - 游戏风格</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/github.css">
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <!-- ... 导航栏内容 ... -->
+    </nav>
+
+    <main class="github-container">
+        <h1 class="neon-text">GitHub 档案</h1>
+
+        <!-- GitHub 统计信息 -->
+        <section class="github-stats">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <i class="fas fa-code-branch"></i>
+                    <h3>总贡献</h3>
+                    <p class="stat-number" id="contributions">Loading...</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-star"></i>
+                    <h3>获得星标</h3>
+                    <p class="stat-number" id="stars">Loading...</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-project-diagram"></i>
+                    <h3>仓库数量</h3>
+                    <p class="stat-number" id="repos">Loading...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 热门仓库 -->
+        <section class="repositories-section">
+            <h2 class="section-title">热门仓库</h2>
+            <div class="repositories-grid" id="repo-list">
+                <!-- 仓库卡片将通过JavaScript动态加载 -->
+            </div>
+        </section>
+
+        <!-- 贡献图表 -->
+        <section class="contribution-section">
+            <h2 class="section-title">年度贡献</h2>
+            <div class="contribution-graph">
+                <!-- GitHub贡献图将通过JavaScript动态加载 -->
+            </div>
+        </section>
+
+        <!-- 技术统计 -->
+        <section class="languages-section">
+            <h2 class="section-title">技术统计</h2>
+            <div class="languages-chart">
+                <!-- 语言统计图表将通过JavaScript动态加载 -->
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <!-- ... 页脚内容 ... -->
+    </footer>
+
+    <a href="index.html" class="back-home" title="返回首页">
+        <i class="fas fa-home"></i>
+    </a>
+
+    <script src="js/main.js"></script>
+    <script src="js/github.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人作品集 - 游戏风格</title>
+    <!-- 引入字体 -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!-- 引入图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- 自定义样式 -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- 添加背景轮播容器 -->
+    <div class="bg-slideshow" id="bgSlideshow"></div>
+
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="neon-text" style="font-size: 1.5rem;">YaoGuai</span>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">首页</a></li>
+                <li><a href="resume.html">简历</a></li>
+                <li><a href="projects.html">项目</a></li>
+                <li><a href="github.html">GitHub</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 主要内容区域 -->
+    <main>
+        <!-- 首页部分 -->
+        <section id="home" class="section">
+            <div class="hero">
+                <h1 class="glitch" data-text="Welcome">欢迎</h1>
+                <p class="subtitle">前端开发者 & 游戏爱好者</p>
+                <p class="subtitle">Frontend Developer & Game Enthusiast</p>
+                <br>
+                <div class="cta-buttons">
+                    <a href="projects.html" class="btn">查看作品</a>
+                    <a href="#contact" class="btn btn-outline" id="contact-btn">联系我</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 联系表单部分（默认隐藏） -->
+        <section id="contact" class="contact-section" style="display: none;">
+            <!-- 联系表单将通过JavaScript动态显示 -->
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://github.com/1yaoguai2" target="_blank" id="github-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:your.email@example.com" id="email-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank" id="linkedin-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <p class="copyright">© 2024 YaoGuai. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // 联系按钮点击事件
+        document.getElementById('contact-btn').addEventListener('click', function (e) {
+            e.preventDefault();
+            // 创建一个简单的弹窗或者显示联系表单
+            const email = 'your.email@example.com';
+            const message = `
+                联系方式：\n
+                Email: 171802082@qq.com\n
+                GitHub: https://github.com/1yaoguai2\n
+                QQ: 171802082
+            `;
+            alert(message);
+        });
+
+        // 社交媒体链接点击事件
+        document.getElementById('github-link').addEventListener('click', function (e) {
+            // 可以添加点击追踪或其他功能
+            console.log('GitHub link clicked');
+        });
+
+        document.getElementById('email-link').addEventListener('click', function (e) {
+            // 可以添加邮件客户端检测等功能
+            console.log('Email link clicked');
+        });
+
+        document.getElementById('linkedin-link').addEventListener('click', function (e) {
+            // 可以添加点击追踪或其他功能
+            console.log('LinkedIn link clicked');
+        });
+    </script>
+    <script src="js/background.js"></script>
+</body>
+
+</html>

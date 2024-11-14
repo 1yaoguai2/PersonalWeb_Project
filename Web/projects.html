@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>项目展示 - 游戏风格</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/projects.css">
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <!-- ... 导航栏内容 ... -->
+    </nav>
+
+    <main class="projects-container">
+        <h1 class="neon-text">项目展示</h1>
+
+        <!-- 项目分类过滤器 -->
+        <div class="project-filters">
+            <button class="filter-btn active" data-filter="all">全部</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="mobile">移动端</button>
+            <button class="filter-btn" data-filter="game">游戏</button>
+        </div>
+
+        <!-- 项目网格 -->
+        <div class="projects-grid">
+            <!-- 项目卡片 1 -->
+            <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <img src="Image/Plane.jpg" alt="项目1">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://play.unity.com/en/games/b83ecc79-b462-4af6-b1b6-873129aefbba/web"
+                                class="project-link" target="_blank" title="在线体验">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://github.com/1yaoguai2/PlaneGame" class="project-link" target="_blank"
+                                title="查看源码">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>
+                        <a href="https://play.unity.com/en/games/b83ecc79-b462-4af6-b1b6-873129aefbba/web"
+                            target="_blank" style="color: inherit; text-decoration: none;">
+                            飞机大战
+                        </a>
+                    </h3>
+                    <p>Unity开发的小游戏</p>
+                    <div class="project-tags">
+                        <span class="tag">Unity</span>
+                        <span class="tag">WebGl</span>
+                        <span class="tag">Unity WebSite</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 更多项目卡片 -->
+            <!-- 复制上面的 project-card 结构并修改内容 -->
+        </div>
+
+        <!-- 加载更多按钮 -->
+        <button class="load-more-btn">
+            加载更多 <i class="fas fa-spinner fa-spin" style="display: none;"></i>
+        </button>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <!-- ... 页脚内容 ... -->
+        <a href="index.html" class="back-home" title="返回首页">
+            <i class="fas fa-home"></i>
+        </a>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/projects.js"></script>
+</body>
+
+</html>
